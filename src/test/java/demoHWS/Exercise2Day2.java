@@ -16,15 +16,16 @@ public class Exercise2Day2 extends Hooks{
 		setUp("edge");
 		
 		driver.get("https://demo.guru99.com/test/newtours/");
-		
 		Thread.sleep(2000);
+		
+		// Click REGISTER
 	WebElement LogainButton = driver.findElement(By.linkText("REGISTER"));
 	
 	LogainButton.click();
 	Thread.sleep(2000);
 	
 	
-	//Number4
+	//
 	
 	String title = driver.getTitle();
 	if(title.contains(" Mercury Tours"))
